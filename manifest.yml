@@ -8,6 +8,6 @@ applications:
   memory: 512M
   path: RedbookLibrary.war
   host: redbook-library
-  buildpack: liberty-for-java 
+  buildpack: liberty-for-java
   services:
-  - redbooklib-SQLDB
+  - SQL Database-demo-curtin
