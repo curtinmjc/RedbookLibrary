@@ -5,8 +5,14 @@
 #    plan: sqldb_free
 declared-services:
   redbooklib-MySQLDB:
-    label: mysqldb
+    label: cleardb
     plan: spark
+  Auto-Scaling-curtinmjc:
+    label: Auto-Scaling
+    plan: free
+  Monitoring and Analytics-curtinmjc:
+    label: MonitoringndAnalytics
+    plan: free
 applications:
 - name: redbooklibrary
   memory: 512M
@@ -15,3 +21,5 @@ applications:
   buildpack: liberty-for-java
   services:
   - redbooklib-MySQL-curtinmjc
+  - Auto-Scaling-curtinmjc
+  - Monitoring and Analytics-curtinmjc

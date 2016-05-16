@@ -1,17 +1,13 @@
 ---
-#declared-services:
-#  redbooklib-SQLDB:
-#    label: sqldb
-#    plan: sqldb_free
 declared-services:
-  redbooklib-MySQLDB:
-    label: mysqldb
-    plan: spark
+  redbooklib-SQLDB:
+    label: sqldb
+    plan: sqldb_free
 applications:
-- name: redbooklibrary
+- name: redbooklibraryPart2
   memory: 512M
   path: RedbookLibrary.war
   host: redbook-library
   buildpack: liberty-for-java
   services:
-  - redbooklib-MySQL-curtinmjc
+  - SQL Database-demo-curtin

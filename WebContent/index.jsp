@@ -11,7 +11,7 @@
 <title>Library Demo App</title>
 </head>
 <body>
-	<h1>Welcome to the IBM Redbooks Publications Application Demo</h1>
+	<h1>A HEARTY Welcome to the IBM Redbooks Publications Application Demo</h1>
 	<p>
 		Current Time:
 		<%=new Date()%></p>
