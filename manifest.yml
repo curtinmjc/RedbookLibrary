@@ -4,10 +4,9 @@ declared-services:
     label: sqldb
     plan: sqldb_free
 applications:
-- name: redbooklibraryPart2
+- name: redbooklibraryPart2a
   memory: 512M
   path: RedbookLibrary.war
-  host: redbook-library
   buildpack: liberty-for-java
   services:
   - SQL Database-demo-curtin
